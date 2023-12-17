@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <script dref src="js/bootstrap.bundle.min.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container-fluid mt-3 main-container">
+            <div class="row navbar-custom">
+                <div class="col d-flex justify-content-between nav-div">
+                    <div class="h6">Case</div>
+                    <div class="">Back</div>
+                </div>
+            </div>
+            <br />
+            <div class="outer-div">
+                <fieldset>
+                    <div class="row mb-1">
+                        <div class="col-12 col-lg-5">
+                            <div class="mb-1">
+                                <label class="right-align-lables" for="Client"
+                                    >Client:</label
+                                >
+                                <input
+                                    class="right-align-inputs"
+                                    type="text"
+                                    name="Client"
+                                    id="Client"
+                                    size="40"
+                                />
+                            </div>
+                            <div class="mb-1">
+                                <label class="right-align-lables" for="CaseType"
+                                    >CaseType:</label
+                                >
+                                <select
+                                    class="right-align-inputs"
+                                    name="CaseType"
+                                    id="CaseType"
+                                    class="w-25"
+                                >
+                                    <option value="">General Case</option>
+                                </select>
+                            </div>
+                            <div class="product-div mb-1">
+                                <label class="right-align-lables" for="Product"
+                                    >Product:</label
+                                >
+                                <select
+                                    class="right-align-inputs"
+                                    name="Product"
+                                    id="Product"
+                                >
+                                    <option value="none"></option>
+                                </select>
+                            </div>
+                            <div class="module-div mb-1">
+                                <label class="right-align-lables" for="Module"
+                                    >Module:</label
+                                >
+                                <select
+                                    class="right-align-inputs"
+                                    name="Module"
+                                    id="Module"
+                                >
+                                    <option value="none"></option>
+                                </select>
+                            </div>
+                            <div>
+                                <label
+                                    class="right-align-lables"
+                                    for="AttachCases"
+                                    >Attach Cases:</label
+                                >
+                                <input
+                                    class="right-align-inputs"
+                                    type="text"
+                                    name="AttachCases"
+                                    id="AttachCases"
+                                    size="25"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-7">
+                            <div class="row">
+                                <div class="col col-12 col-lg-5 radiobtnDiv">
+                                    <div class="mb-1">
+                                        <label for="ContactedBy"
+                                            >Contacted By:</label
+                                        >
+                                        <input
+                                            type="radio"
+                                            name="VAR"
+                                            id="VAR"
+                                        />
+                                        <label for="VAR">VAR</label>
+                                        <input
+                                            type="radio"
+                                            name="Client"
+                                            id="Client"
+                                        />
+                                        <label for="Client">Client</label>
+                                    </div>
+                                    <div class="mb-1">
+                                        <label for="Type">Type:</label>
+                                        <input
+                                            type="radio"
+                                            name="Agent"
+                                            id="Agent"
+                                        />
+                                        <label for="Agent">Agent</label>
+                                        <input
+                                            type="radio"
+                                            name="Call"
+                                            id="Call"
+                                        />
+                                        <label for="Call">Call</label>
+                                        <input
+                                            type="radio"
+                                            name="RDP"
+                                            id="RDP"
+                                        />
+                                        <label for="RDP">RDP</label>
+                                        <input
+                                            type="radio"
+                                            name="Email"
+                                            id="Email"
+                                        />
+                                        <label for="Email">Email</label>
+                                        <input
+                                            type="radio"
+                                            name="Ticket"
+                                            id="Ticket"
+                                        />
+                                        <label for="Ticket">Ticket</label>
+                                        <input
+                                            type="radio"
+                                            name="Other"
+                                            id="Other"
+                                        />
+                                        <label for="Other">Other</label>
+                                    </div>
+                                    <div class="version-div mb-1">
+                                        <label for="Version">Version:</label>
+                                        <select name="select" id="select">
+                                            <option value="none"></option>
+                                        </select>
+                                    </div>
+                                    <br />
+                                    <br />
+                                    <div>
+                                        <input
+                                            type="radio"
+                                            name="AttachSolution"
+                                            id="AttachSolution"
+                                        />
+                                        <label for="AttachSolution"
+                                            >Attach Solution(s):</label
+                                        >
+                                        <input
+                                            type="radio"
+                                            name="AttachNote"
+                                            id="AttachNote"
+                                        />
+                                        <label for="AttachNote"
+                                            >AttachNote:</label
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col col-12 col-lg-5">
+                                    <div>
+                                        <label
+                                            class="right-align-lables"
+                                            for="Date"
+                                            >Date:</label
+                                        >
+                                        <input
+                                            class="right-align-inputs"
+                                            type="text"
+                                            name="Date"
+                                            id="Date"
+                                            size="10"
+                                            value="11-10-2014"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <div class="mb-1">
+                            <label class="right-align-lables" for="Problem"
+                                ><sup>*</sup>Problem:</label
+                            >
+                            <input
+                                class="right-align-inputs"
+                                type="text"
+                                name="Problem"
+                                id="Problem"
+                                size="112"
+                            />
+                        </div>
+                        <div>
+                            <label
+                                class="right-align-lables"
+                                for="SupportSolution"
+                                ><sup>*</sup>Supoort Solution:</label
+                            >
+                            <input
+                                class="right-align-inputs"
+                                type="text"
+                                name="SupportSolution"
+                                id="SupportSolution"
+                                size="112"
+                            />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="support-by-div mb-1">
+                                <label
+                                    for="SupportBy"
+                                    class="right-align-lables"
+                                    ><sup>*</sup> Support By:</label
+                                >
+                                <select
+                                    class="right-align-inputs"
+                                    name="SupportBy"
+                                    id="SupportBy"
+                                >
+                                    <option value="Hiren Rathod">
+                                        Hiren Rathod
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="mb-1">
+                                <label
+                                    class="right-align-lables"
+                                    for="SessionID"
+                                    >Session ID:</label
+                                >
+                                <input
+                                    class="right-align-inputs"
+                                    type="text"
+                                    size="13"
+                                />
+                                <span>Get Session Data</span>
+                            </div>
+                            <div class="priority-div mb-1">
+                                <label class="right-align-lables" for="Priority"
+                                    ><sup>*</sup> Priority:</label
+                                >
+                                <select
+                                    class="right-align-inputs"
+                                    name="Priority"
+                                    id="Priority"
+                                >
+                                    <option value="3-Normal">3-Normal</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="assign-to-div mb-1">
+                                <label class="right-align-lables" for="AssignTo"
+                                    ><sup>*</sup> Assign To:</label
+                                >
+                                <select
+                                    class="right-align-inputs"
+                                    name="AssignTo"
+                                    id="AssignTo"
+                                >
+                                    <option value="Hiren Rathod">
+                                        Hiren Rathod <sup>*</sup>
+                                    </option>
+                                </select>
+                            </div>
+                            <div class="agent-no-div mb-1">
+                                <label class="right-align-lables" for="agentNo"
+                                    ><sup>*</sup> Agent No:</label
+                                >
+                                <select
+                                    class="right-align-inputs"
+                                    name="agentNo"
+                                    id="agentNo"
+                                >
+                                    <option value="None"></option>
+                                </select>
+                            </div>
+                            <div class="ps-type-div">
+                                <label class="right-align-lables" for="psType"
+                                    >PS Type:</label
+                                >
+                                <select
+                                    class="right-align-inputs"
+                                    name="psType"
+                                    id="psType"
+                                >
+                                    <option value="psType"></option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="called-by-div">
+                                <label class="right-align-lables" for="CalledBy"
+                                    >Called By:</label
+                                >
+                                <select
+                                    class="right-align-inputs"
+                                    name="CalledBy"
+                                    id="CalledBy"
+                                >
+                                    <option value="none"></option>
+                                </select>
+                            </div>
+                            <br />
+                            <div>
+                                <input
+                                    type="checkbox"
+                                    name="daily-log"
+                                    id="daily-log"
+                                />
+                                <label for="daily-log">Daily Log</label>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input
+                                    class="right-align-inputs"
+                                    type="checkbox"
+                                    name="LogActivity"
+                                    id="LogActivity"
+                                />
+                                <label for="LogActivity"
+                                    >Log Interface Activity</label
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-lg-8">
+                            <div class="row">
+                                <div class="col col-lg-5">
+                                    <label
+                                        class="right-align-lables"
+                                        for="uploadFile"
+                                        >Upload File:</label
+                                    >
+                                    <input
+                                        class="right-align-inputs"
+                                        type="file"
+                                        name="uploadFile"
+                                        id="uploadFile"
+                                    />
+                                </div>
+                                <div class="col col-lg-3 w-25">
+                                    <button>Attach More</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-4">
+                            <div>
+                                <label class="right-align-lables" for="Notify"
+                                    >Notify on Status Update:</label
+                                >
+                                <input
+                                    class="right-align-inputs"
+                                    type="text"
+                                    name="Notify"
+                                    id="Notify"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="status-div">
+                            <label class="right-align-lables" for="Status"
+                                >Status:</label
+                            >
+                            <select
+                                class="right-align-inputs"
+                                name="Satus"
+                                id="Status"
+                            >
+                                <option value="Pending">Pending</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="mb-1">
+                                <label class="right-align-lables" for="followup"
+                                    >Followup Required?:</label
+                                >
+                                <select
+                                    class="right-align-inputs"
+                                    name="followup"
+                                    id="followup"
+                                >
+                                    <option value="Yes">Yes</option>
+                                </select>
+                            </div>
+                            <div class="mb-1">
+                                <label class="right-align-lables" for="Bilable"
+                                    >Bilable:</label
+                                >
+                                <select
+                                    class="right-align-inputs"
+                                    name="Bilable"
+                                    id="Bilable"
+                                >
+                                    <option value="No">No</option>
+                                </select>
+                            </div>
+                            <div class="mb-1">
+                                <label
+                                    class="right-align-lables"
+                                    for="StartCall"
+                                    ><sup>*</sup> Start Call:</label
+                                >
+                                <input type="text" name=StartCall""
+                                id="StartCall" value="11:12" size="3">
+                                <select name="StartCall" id="StartCall">
+                                    <option value="PM">PM</option>
+                                    <option value="AM">AM</option>
+                                </select>
+                            </div>
+                            <div class="mb-1">
+                                <label
+                                    class="right-align-lables"
+                                    for="PromisedDate:"
+                                    ><sup>*</sup> Promised Date:</label
+                                >
+                                <input
+                                    class="right-align-inputs"
+                                    type="text"
+                                    name="PromisedDate"
+                                    id="PromisedDate"
+                                    value="11-12-2014"
+                                    size="8"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div>
+                                <label
+                                    class="right-align-lables"
+                                    for="NextFollowup"
+                                    ><sup>*</sup> Next FollowUp Date:</label
+                                >
+                                <input
+                                    class="right-align-inputs"
+                                    type="text"
+                                    name="NextFollowup"
+                                    id="NextFollowup"
+                                    value="11-11-2014"
+                                    size="8"
+                                />
+                                <input
+                                    class="right-align-inputs"
+                                    type="text"
+                                    name="NextFollowup"
+                                    id="NextFollowup"
+                                    value="12:00"
+                                    size="3"
+                                />
+                                <select
+                                    class="right-align-inputs"
+                                    name="NextFollowup"
+                                    id="NextFollowup"
+                                >
+                                    <option value="PM">PM</option>
+                                    <option value="AM">AM</option>
+                                </select>
+                            </div>
+                            <br />
+                            <br />
+                            <div>
+                                <label class="right-align-lables" for="EndCall"
+                                    ><sup>*</sup> End Call:</label
+                                >
+                                <input
+                                    class="right-align-inputs"
+                                    type="text"
+                                    name="EndCall"
+                                    id="EndCall"
+                                    value="00:00"
+                                    size="2"
+                                />
+                                <select
+                                    class="right-align-inputs"
+                                    name="EndCall"
+                                    id="EndCall"
+                                >
+                                    <option value="PM">PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div>
+                                <label
+                                    class="right-align-lables"
+                                    for="NextFollowupBy"
+                                    ><sup>*</sup> Next Followup by:</label
+                                >
+                                <select
+                                    class="right-align-inputs"
+                                    name="NextFollowupBy"
+                                    id="NextFollowupBy"
+                                >
+                                    <option value="Hiren">
+                                        Hiren Rathod <sup>*</sup>
+                                    </option>
+                                </select>
+                            </div>
+                            <br />
+                            <div class="mb-1">
+                                <label class="right-align-lables" for="Duration"
+                                    ><sup>*</sup> Duration:</label
+                                >
+                                <input
+                                    class="right-align-inputs"
+                                    type="text"
+                                    name="Duration"
+                                    id="Duration"
+                                    size="2"
+                                />
+                                <span>Hr(s)</span>
+                                <input
+                                    class="right-align-inputs"
+                                    type="text"
+                                    name="Duration"
+                                    id="Duration"
+                                    size="2"
+                                />
+                                <span>Min(s)</span>
+                            </div>
+                            <div>
+                                <label
+                                    class="right-align-lables"
+                                    for="ActualDuration"
+                                    ><sup>*</sup> Actual Duration:</label
+                                >
+                                <input
+                                    class="right-align-inputs"
+                                    type="text"
+                                    name="ActualDuration"
+                                    id="ActualDuration"
+                                    size="2"
+                                />
+                                <span>Hr(s)</span>
+                                <input
+                                    class="right-align-inputs"
+                                    type="text"
+                                    name="ActualDuration"
+                                    id="ActualDuration"
+                                    size="2"
+                                />
+                                <span>Min(s)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+                            <label
+                                class="right-align-lables"
+                                for="Perm.Solution"
+                                >Perm.Solution:</label
+                            >
+                            <textarea
+                                class="right-align-inputs"
+                                name="Perm.Solution"
+                                id="Perm.Solution"
+                                cols="50"
+                                rows="1"
+                            ></textarea>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <label
+                                class="right-align-lables"
+                                for="SpecialRemark"
+                                >Special Remark:</label
+                            >
+                            <textarea
+                                class="right-align-inputs"
+                                name="SpecialRemark"
+                                id="SpecialRemark"
+                                cols="50"
+                                rows="1"
+                            ></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="d-flex justify-content-center footer">
+                <div class="mt-4">
+                    <button type="button" class="btn btn-info footer-btn">
+                        Save
+                    </button>
+                    <button type="button" class="btn btn-info footer-btn">
+                        Save & Continue
+                    </button>
+                    <button type="button" class="btn btn-info footer-btn">
+                        Save & New
+                    </button>
+                    <button type="button" class="btn btn-info footer-btn">
+                        Save & New for same client
+                    </button>
+                    <button type="button" class="btn btn-info footer-btn">
+                        Reset
+                    </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

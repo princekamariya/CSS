@@ -1,0 +1,108 @@
+body {
+    padding: 20px;
+}
+
+.right-align-lables {
+    text-align: right;
+    width: 130px;
+    display: inline-block;
+    /* Adjust the width based on your preference */
+    margin-bottom: 5px;
+}
+
+.right-align-radio-labels{
+    text-align: right;
+    display: inline-block;
+}
+
+.right-align-radio-inputs{
+    text-align: left;
+}
+.right-align-inputs {
+    text-align: left;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.nav-div {
+    border: 1px solid #ddd;
+    border-radius: 50px;
+}
+
+select {
+    cursor: pointer;
+}
+
+.radiobtnDiv {
+    margin-bottom: 5px;
+}
+
+.outer-div {
+    font-size: 10px;
+    background-image: linear-gradient(#e0ebf7, white);
+}
+
+.main-container {
+    background-image: linear-gradient(#e0ebf7, white);
+    border: 1px solid #ddd;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.navbar-custom {
+    background-color: #c0d1e3;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+
+}
+
+.footer-btn {
+    color: white;
+}
+
+.footer {
+    padding: 15px;
+}
+
+.product-div>select {
+    width: 150px;
+}
+
+.module-div>select {
+    width: 180px;
+}
+
+.version-div>select {
+    width: 150px;
+}
+
+.support-by-div>select {
+    width: 150px;
+}
+
+.priority-div>select {
+    width: 180px;
+}
+
+.assign-to-div>select {
+    width: 150px;
+}
+
+.agent-no-div>select {
+    width: 150px;
+}
+
+.ps-type-div>select {
+    width: 150px;
+}
+
+.called-by-div>select {
+    width: 8em;
+}
+
+.status-div>select {
+    width: 7em;
+}
